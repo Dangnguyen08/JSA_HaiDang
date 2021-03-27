@@ -93,8 +93,9 @@ header nav ul {
    letter-spacing: 3px;
    text-align: center;
    margin-top: 50px;
-   font-weight: 200;
+   font-weight: 100;
    line-height: 45px;
+   font-size: 35px;
 }
 .contentheader .gachngang {
     color: orange;
@@ -118,3 +119,181 @@ header nav ul {
     font-size: 20px;
     line-height: 40px;
 }
+/* end section features */
+
+/* section fav meals */
+.favourite-meals {
+    display: flex;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.favourite-meals::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.favourite-meals > img {
+    max-width: 25%;
+}
+/* end section fav meals */
+
+/* section how it works */
+.how-it-works {
+    min-height: 500px;
+    background-color: #f0f0f0;
+}
+.how-it-works>h2 {
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.how-it-works .line {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin: 30px auto;
+}
+.how-it-works .content {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.how-it-works .content .left {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 45%;
+}
+.how-it-works .content .left >img {
+    width: 200px;
+}
+.how-it-works .content .right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 45%;
+}
+.how-it-works .content .right span {
+    font-size: 40px;
+    margin-right: 20px;
+    color: orange;
+    padding: 0px 20px;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+.how-it-works .content .right p {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 20px 0px;
+}
+.how-it-works .content .bot >img {
+    width: 135px;
+    height: 40px;
+    margin-right: 10px;
+}
+/* end section how it works */
+
+/* section citites */
+.cities >h2 {
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.cities .line {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin: 30px auto;
+}
+.cities-list {
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+    font-weight: 200;
+}
+.cities-list .cities-item {
+    max-width: 23%;
+}
+.cities-item > img {
+    width: 100%;
+}
+/* end section citites */
+
+/* section customer */
+.signup {
+    min-height: 500px;
+    background-color: #f0f0f0;
+    margin-top: 45px;
+}
+.signup>h2 {
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.signup .line {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin: 30px auto;
+}
+.signupcontent {
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+}
+.signupcontent h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+.signupcontent h1 {
+    color: orange;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+.signupcontent .month {
+    color: orange;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.signupcontent .premium {
+    background-color: white;
+    margin: 30px;
+    line-height: 25px;
+    border: 1px solid white;
+    border-radius: 3%;
+    box-shadow: 1px 1px 1px #AAA;
+}
+.signupcontent .pro {
+    background-color: white;
+    margin: 30px;
+    line-height: 25px;
+    border: 1px solid white;
+    border-radius: 3%;
+    box-shadow: 1px 1px 1px #AAA;
+}
+.signupcontent .starter {
+    background-color: white;
+    margin: 30px;
+    line-height: 25px;
+    border: 1px solid white;
+    border-radius: 3%;
+    box-shadow: 1px 1px 1px #AAA;
+}
+.signupcontent button {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 47px;
+}
+/* end section customer */
+
