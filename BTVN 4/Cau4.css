@@ -1,0 +1,9 @@
+* {
+    background-color: chocolate;
+}
+#clock {
+    text-align: center;
+    color: white;
+    margin: 250px;
+    font-size: 100px;
+}

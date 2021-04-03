@@ -1,0 +1,17 @@
+.cau2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(193, 252, 219);
+    position: relative;
+}
+.cau2:hover .nen {
+    opacity: 1;
+}
+.cau2 .nen {
+    transition: 1s;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(93, 180, 180);
+    opacity: 0;
+}

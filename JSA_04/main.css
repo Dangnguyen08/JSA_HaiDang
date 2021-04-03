@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.vidu1 > ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightskyblue;
+    height: 100px;
+}
+.vidu1 > ul li {
+    transition: 0.4s;
+    cursor: pointer;
+    line-height: 100px;
+    padding: 10px 30px;
+}
+.vidu1 > ul li:hover {
+    background-color: lightgrey;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+
+.vidu2 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 1.5s;
+}
+.vidu2:hover {
+    transform: rotate(180deg);
+}
+
+.vidu3 {
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;
+    position: relative;
+}
+.vidu3:hover .nen {
+    opacity: 1;
+}
+.vidu3 .nen {
+    transition: 1s;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    opacity: 0;
+}
+
+.nenXam {
+    background-color: gray;
+}
