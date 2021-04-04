@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Key : <input type="text" name="text" placeholder="Key" id="key">
+    Value : <input type="text" name="text" placeholder="Value" id="value">
+    <button id="add">Nhập</button>
+    <button id="remove">Xóa</button>
+
+    <ul id="listDS">
+
+    </ul>
+
+
+    <script>
+        
+
+        let btn = document.getElementById("add");
+        btn.addEventListener('click',addItem);
+        let btn1 = document.getElementById("remove");
+        btn1.addEventListener('click', removeItem);
+        render();
+        function addItem() {
+            let key = document.getElementById("key").value;
+            let value = document.getElementById("value").value;
+            localStorage.setItem(key, value);
+            document.getElementById("key").value = "";
+            document.getElementById("value").value = "";
+            render()
+        }
+
+        function removeItem() {
+            let key = document.getElementById("key").value;
+            localStorage.removeItem(key);
+            document.getElementById("key").value = "";
+            render();
+        }
+
+        function render () {
+            let ul = document.getElementById("listDS");
+            ul.innerHTML = "";
+            for (let i = 0; i < localStorage.length; i++){
+                ul.innerHTML += '<li> Key: ' + localStorage.key(i) + 'Value' + localStorage.getItem(localStorage.key(i)) + '<li>'
+            }
+            document.body.appendChild(ul);
+        }
+        
+        
+        
+        
+        
+        
+        
+        // let json1 = '["bye","hello"]';
+        // let json2 = '{"name" : "Dang", "Age" : 16, "isbol" : true}';
+        // let json3 = '[{"name" : "Dang", "Age" : 16, "isbol" : true},{"name" : "Dang", "Age" : 16, "isbol" : true}]';
+        // let json4 = '{"jsa_02": {"time" : "9h", "count" : 6 }}'
+
+        // Chuyển từ json => js
+        // Chuyển từ js => json
+
+        // console.log(JSON.parse(json1))
+        // console.log(json2)
+        // console.log(json3)
+        // console.log(json4)
+
+        // let arr = ["abc", "cba"];
+        // console.log(JSON.stringify(arr))
+
+        // Đặt giá trị setItem
+        // Lấy giá trị getItem
+        // Xóa giá trị remove Item
+        // xóa hết clear
+        // lấy key 
+
+        // localStorage.setItem("name", "Dang")
+        // localStorage.setItem("age", 16)
+        // localStorage.setItem("arr", JSON.stringify(["abc","cba"]))
+
+        // console.log(localStorage.getItem("name"))
+        // console.log(localStorage.getItem("age"))
+        // console.log(JSON.parse(localStorage.getItem("arr")))
+
+        // console.log(localStorage.key(1))
+
+        // localStorage.removeItem("arr")
+        // localStorage.clear()
+
+    </script>
+</body>
+</html>
