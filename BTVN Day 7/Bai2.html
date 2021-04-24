@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+       let courses = [
+                { name: 'Javascript', vnd: 1000000 },
+                { name: 'PHP', vnd: 990000 },
+                { name: 'HTML, CSS', vnd: 0 }
+            ]
+        
+        function hasFreeCourses(courses) {
+        let a = courses.some(function(x) {
+                return x.vnd === 0;
+        });
+            return a;
+        }
+    </script>
+</body>
+</html>
