@@ -11,11 +11,18 @@
 
 
     <script>
-          function findEqualValues(array1, array2){
-            return array1.filter(function(num) {
-                return array2.includes(num);
-            })
-        }
+          let array1 = [1,2,6,8];
+          let array2 = [2,9,6];
+
+          let findEqualValues = (array1, array2) => {
+              let result = [];
+              array1.forEach(item1 => {
+                  if(array2.includes(item1) && !result.includes(item1)){
+                      result.push(item1);
+                  }
+              })
+              return result; 
+          }
     </script>
 </body>
 </html>

@@ -16,11 +16,8 @@
                 { name: 'HTML, CSS', vnd: 0 }
             ]
         
-        function hasFreeCourses(courses) {
-        let a = courses.some(function(x) {
-                return x.vnd === 0;
-        });
-            return a;
+        let hasFreeCourses = (courses) => {
+            return courses.some(courses => courses.vnd === 0)
         }
     </script>
 </body>

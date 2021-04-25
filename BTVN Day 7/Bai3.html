@@ -10,13 +10,18 @@
     
 
     <script>
-        function findStringsInArrayByKeyword(keyword, strings) {
-            return strings.filter(function(x) {
-              if (x.includes(keyword)) {
-                return x;
-              }
-            })
-          }
+        let keyword = 'hi';
+        let strings = ['hi', 'abc', 'chuối','123']
+
+        let findStringsInArrayByKeyWord = (keyword, strings) => {
+          let result = [];
+          string.forEach(string => {
+            if(string.includes(keyword)){
+              result.push(string);
+            }
+          })
+          return result;
+        }
     </script>
 </body>
 </html>

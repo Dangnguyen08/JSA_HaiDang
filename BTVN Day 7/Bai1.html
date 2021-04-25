@@ -12,12 +12,13 @@
 
 
     <script>
-        function checkPositiveNumbers(numbers) {
-              let a = numbers.every(function(x) {
-                  return x > 0;
-              })
-              return a;
-          }
+        let numbers = [1, -8, 3];
+
+        let checkPositiveNumbers = (nummbers) => {
+            return numbers.every(number => number > 0)
+        }
+
+        console.log(checkPositiveNumbers)
     </script>
 </body>
 </html>
